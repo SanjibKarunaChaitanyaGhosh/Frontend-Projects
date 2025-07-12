@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .card{
+            width: 360px;
+            height: 530px;
+            transform-style: preserve-3d;
+            transition: transform .8s ease-out;
+            cursor: pointer;
+            /* border: 1px solid #dd0808; */
+            box-shadow: 2px 2px 2px rgba(25, 5, 201, 0.2),
+            -5px -5px 100px rgb(60, 89, 253);
+            border-radius: 15px;
+        }
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+        .front-page{
+            border: 1px solid #dd0808;
+            background:url(images/2.png) no-repeat;
+            background-size: 360px 530px;
+            border-radius: 15px;
+            width: 360px;
+            height: 530px;
+        }
+        .card-info{
+            /* border: 1px solid #dd0808; */
+            margin-top:136px;
+            width: 350px;
+            height: 300px;
+        }
+        .card-title{
+            /* border: 1px solid #0c0c0c; */
+            color: rgb(252, 213, 41);
+        }
+        .card-subtitle{
+            /* border: 1px solid #030303; */
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+            <div class="front-page">
+                 <div class="card-info">
+                     <h2 class="card-title"> Virat King Kohli</h2>
+                        <h2 class="card-subtitle">'Amazing feeling' as Kohli & RCB end 18-year wait for IPL title</h2>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
